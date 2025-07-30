@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Enter to Elegance | Miraana</title>
+  <style>
+    /* Reset & Base */
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body, html {
+      height: 100%;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    /* Landing Background */
+    .landing {
+      background-image: url('Logo.jpeg');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      width: 100%;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+    }
+
+    /* Overlay Section */
+    .overlay {
+      background-color: rgba(0, 0, 0, 0.6);
+      padding: 40px 30px;
+      border-radius: 16px;
+      color: #fff;
+      text-align: center;
+      max-width: 800px;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
+    }
+
+    .heading {
+      font-size: 2.8rem;
+      font-weight: bold;
+      margin-bottom: 20px;
+      color: #ffd700;
+    }
+
+    .objective {
+      font-size: 1.1rem;
+      line-height: 1.8;
+      margin-bottom: 30px;
+      color: #f0f0f0;
+    }
+
+    .objective p {
+      margin-bottom: 10px;
+    }
+
+    /* Button & Logo Row */
+    .button-logo-row {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    .enter-button {
+      padding: 14px 32px;
+      font-size: 1.1rem;
+      font-weight: bold;
+      background: #f8e71c;
+      color: #000;
+      border: none;
+      border-radius: 50px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+    }
+
+    .enter-button:hover {
+      background: #ffe600;
+      transform: scale(1.05);
+    }
+
+    .logo-beside-btn {
+      width: 60px;
+      height: auto;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(255,255,255,0.2);
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      .heading {
+        font-size: 2rem;
+      }
+
+      .objective {
+        font-size: 1rem;
+      }
+
+      .enter-button {
+        padding: 12px 24px;
+        font-size: 1rem;
+      }
+
+      .logo-beside-btn {
+        width: 50px;
+      }
+
+      .overlay {
+        padding: 25px 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="landing">
+    <div class="overlay">
+      <div class="heading">MIRAANA – The Ethnic Luxe Edit</div>
+      <div class="objective">
+        <p><strong>Founder:</strong> Moumita Chakraborty</p>
+        <p><strong>Co-partner:</strong> Shaheen</p>
+        <p>
+          Miraana is more than a brand — it’s a celebration of Indian heritage wrapped in elegance.
+          From intricately hand-stitched Juttis, every piece is crafted to echo royalty, culture, and feminine grace.
+        </p>
+        <p>
+          Our designs blend tradition with a touch of modern luxury — made for women who carry their roots with pride
+          and wear elegance effortlessly.
+        </p>
+      </div>
+
+      <!-- Button + Logo side by side -->
+      <div class="button-logo-row">
+        <button class="enter-button" onclick="window.location.href='shopping.html'">
+          Enter to Elegance
+        </button>
+        <img src="Logo.jpeg" alt="Miraana Logo" class="logo-beside-btn">
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
